@@ -15,11 +15,11 @@ C:/Users/humanscanner/Documents/GitHub/3D-Annotation/3D Annotation
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58105
+63029
 Successfully changed project path to: C:/Users/humanscanner/Documents/GitHub/3D-Annotation/3D Annotation
 C:/Users/humanscanner/Documents/GitHub/3D-Annotation/3D Annotation
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 20.02 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 20.73 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.3f1 (76626098c1c4)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -35,63 +35,55 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56268
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001623 seconds.
+Registered in 0.001640 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 21.45 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 20.33 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.932 seconds
+- Completed reload, in  0.921 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000778 seconds.
+Registered in 0.000689 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.718 seconds
+- Completed reload, in  0.698 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1116 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 57.2 MB.
-System memory in use after: 57.2 MB.
+System memory in use after: 57.3 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1558.
-Total: 2.146900 ms (FindLiveObjects: 0.294800 ms CreateObjectMapping: 0.082400 ms MarkObjects: 1.657500 ms  DeleteObjects: 0.110700 ms)
+Total: 2.011500 ms (FindLiveObjects: 0.267000 ms CreateObjectMapping: 0.031800 ms MarkObjects: 1.607500 ms  DeleteObjects: 0.103900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs
-  artifactKey: Guid(db3f17be5ac863f488a922383002531c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(db3f17be5ac863f488a922383002531c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87390767199ae0a150dc309306d7a18f') in 0.008732 seconds
-  Import took 0.010758 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.857267 seconds.
-  path: Assets/Prefabs/Toke_1_bottom.prefab
-  artifactKey: Guid(d216664daac7745429fc69c2a85fd6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Toke_1_bottom.prefab using Guid(d216664daac7745429fc69c2a85fd6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9eaccaca673c01083c47d5649df9dec') in 0.143005 seconds
-  Import took 0.145406 seconds .
+  path: Assets/Prefabs/Toke_3.prefab
+  artifactKey: Guid(9cc95a901ceaec44a958f0bfaaa745fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Toke_3.prefab using Guid(9cc95a901ceaec44a958f0bfaaa745fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21584ea6cdfa8c5e20d4951ace6793b8') in 0.136291 seconds
+  Import took 0.138504 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000538 seconds.
+Registered in 0.000494 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
@@ -100,30 +92,7 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.661 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1111 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.3 MB.
-System memory in use after: 60.4 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1568.
-Total: 2.009600 ms (FindLiveObjects: 0.256200 ms CreateObjectMapping: 0.052500 ms MarkObjects: 1.653300 ms  DeleteObjects: 0.046000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000610 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.680 seconds
+- Completed reload, in  0.663 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -131,101 +100,7 @@ Unloading 1111 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 60.3 MB.
 System memory in use after: 60.4 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1571.
-Total: 1.959200 ms (FindLiveObjects: 0.221400 ms CreateObjectMapping: 0.042100 ms MarkObjects: 1.638200 ms  DeleteObjects: 0.055600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 249.961565 seconds.
-  path: Assets/Prefabs/Toke_1.prefab
-  artifactKey: Guid(d216664daac7745429fc69c2a85fd6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Toke_1.prefab using Guid(d216664daac7745429fc69c2a85fd6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d305c49ef4684ee7af29908ebcaed00') in 0.063227 seconds
-  Import took 0.065540 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000647 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.702 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1111 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.3 MB.
-System memory in use after: 60.4 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1575.
-Total: 2.225800 ms (FindLiveObjects: 0.285900 ms CreateObjectMapping: 0.085100 ms MarkObjects: 1.805900 ms  DeleteObjects: 0.047200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 357.024230 seconds.
-  path: Assets/Prefabs/Toke_2.prefab
-  artifactKey: Guid(cec0617152a9aca41a01265c4b373ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Toke_2.prefab using Guid(cec0617152a9aca41a01265c4b373ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d65ec0eea25f4ca3b1be71052046ea4') in 0.069173 seconds
-  Import took 0.071799 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000500 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.646 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1111 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 60.4 MB.
-System memory in use after: 60.4 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1579.
-Total: 2.209800 ms (FindLiveObjects: 0.284400 ms CreateObjectMapping: 0.084600 ms MarkObjects: 1.796300 ms  DeleteObjects: 0.042800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 56.418760 seconds.
-  path: Assets/Models/Toke_3/Toke_3.obj
-  artifactKey: Guid(1e12ce99cead3bf4f9c2c50da18a28a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Toke_3/Toke_3.obj using Guid(1e12ce99cead3bf4f9c2c50da18a28a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '273f41a059acc366174bbdd4f175b820') in 0.102074 seconds
-  Import took 0.104459 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.878020 seconds.
-  path: Assets/Models/Toke_3/Toke_3.obj.mtl
-  artifactKey: Guid(7c93695b551ed944da116a6c0a8e5a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Toke_3/Toke_3.obj.mtl using Guid(7c93695b551ed944da116a6c0a8e5a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1e253f6ffbc1b3f202f7280d0c59dfb') in 0.009043 seconds
-  Import took 0.011166 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 318.657868 seconds.
-  path: Assets/Models/Toke_3/Toke_3_bottom.obj
-  artifactKey: Guid(8f7b92d050cdaa84182150db3a8765ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Toke_3/Toke_3_bottom.obj using Guid(8f7b92d050cdaa84182150db3a8765ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ccd57f63e2baea0a201046732fafd18') in 0.042437 seconds
-  Import took 0.045088 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.622018 seconds.
-  path: Assets/Models/Toke_3/Toke_3.obj
-  artifactKey: Guid(1e12ce99cead3bf4f9c2c50da18a28a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Toke_3/Toke_3.obj using Guid(1e12ce99cead3bf4f9c2c50da18a28a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1b4f3cc77d17a377acae2b4e5b31a1e') in 0.027473 seconds
-  Import took 0.029649 seconds .
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1568.
+Total: 2.110800 ms (FindLiveObjects: 0.253800 ms CreateObjectMapping: 0.040500 ms MarkObjects: 1.771700 ms  DeleteObjects: 0.043100 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
