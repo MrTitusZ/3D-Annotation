@@ -4,21 +4,13 @@ using UnityEngine;
 
 public class BoundingBox : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
+    // This method draws a GUI box around the given game object
     private void OnGUI()
     {
         GUI.Box(GUI2dRectWithObject(gameObject), "");
     }
 
+    // This method returns a 3D rectangle around the given game object
     public static Rect GUI3dRectWithObject(GameObject go)
     {
 
@@ -45,6 +37,7 @@ public class BoundingBox : MonoBehaviour
         return new Rect(min.x, min.y, max.x - min.x, max.y - min.y);
     }
 
+    // This method returns a 2D rectangle around the game object
     public static Rect GUI2dRectWithObject(GameObject go)
     {
         Vector3[] vertices = go.GetComponent<MeshFilter>().mesh.vertices;
@@ -65,6 +58,7 @@ public class BoundingBox : MonoBehaviour
         return bbox;
     }
 
+    // This method converts the world points to the screen pixel point
     public static Vector2 WorldToGUIPoint(Vector3 world)
     {
         Vector2 screenPoint = Camera.main.WorldToScreenPoint(world);
