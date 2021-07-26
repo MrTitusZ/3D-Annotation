@@ -28,6 +28,6 @@ public class CreateFile : MonoBehaviour
 
         string spaceing = " ";
 
-        return 0 + spaceing + xCenter + spaceing + yCenter + spaceing + w + spaceing + h;
+        return (0 + spaceing + xCenter + spaceing + yCenter + spaceing + w + spaceing + h).Replace(",",".");
     }
 }
