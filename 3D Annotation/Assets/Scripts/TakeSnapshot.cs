@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class TakeSnapshot : MonoBehaviour
 {
-    [SerializeField] public int resWidth = 1920;
-    [SerializeField] public int resHeight = 1080;
+    
 
-    // This method captures a single snapshot in a .png format
-    public void CaptureSnapshot(Camera snapshotCamera, int snapshotIndex)
+    // This method captures a single snapshot in a .png format with the given resolution
+    public void CaptureSnapshot(Camera snapshotCamera, int snapshotIndex, int resWidth, int resHeight)
     {
         RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
         snapshotCamera.targetTexture = rt;

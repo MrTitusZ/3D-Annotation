@@ -11,7 +11,7 @@ public class BoundingBox : MonoBehaviour
     }
 
     // This method returns a 3D rectangle around the given game object
-    Rect GUI3dRectWithObject(GameObject go)
+    public Rect GUI3dRectWithObject(GameObject go)
     {
 
         Vector3 cen = go.GetComponent<Renderer>().bounds.center;
@@ -38,7 +38,7 @@ public class BoundingBox : MonoBehaviour
     }
 
     // This method returns a 2D rectangle around the game object
-    Rect GUI2dRectWithObject(GameObject go)
+    public Rect GUI2dRectWithObject(GameObject go)
     {
         Vector3[] vertices = go.GetComponent<MeshFilter>().mesh.vertices;
 

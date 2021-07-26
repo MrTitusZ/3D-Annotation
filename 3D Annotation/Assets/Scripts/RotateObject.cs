@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class RotateObject : MonoBehaviour   
 {
-    [SerializeField] float rotationDegree = 15f;
-
     // This method rotates the object
-    public void RotateGameObject()
+    public void RotateGameObject(float rotationDegree)
     {
         transform.Rotate(0, -rotationDegree, 0);
     }
 
-    public float GetRotationDegree()
+    // This method returns the rotation degree
+    public float GetRotationDegree(float rotationDegree)
     {
         return rotationDegree;
     }
