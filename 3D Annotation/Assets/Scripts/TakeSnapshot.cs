@@ -14,14 +14,6 @@ public class TakeSnapshot : MonoBehaviour
         snapshotCamera = gameObject.GetComponent<Camera>();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown("k"))
-        {
-            CaptureSnapshot(1);
-        }
-    }
-
     // This method captures a single snapshot in a .png format
     public void CaptureSnapshot(int snapshotIndex)
     {
@@ -31,9 +23,9 @@ public class TakeSnapshot : MonoBehaviour
         snapshotCamera.Render();
         RenderTexture.active = rt;
         screenShot.ReadPixels(new Rect(0, 0, resWidth, resHeight), 0, 0);
-        //snapshotCamera.targetTexture = null;
-        //RenderTexture.active = null;
-        //Destroy(rt);
+        snapshotCamera.targetTexture = null;
+        RenderTexture.active = null;
+        Destroy(rt);
         byte[] bytes = screenShot.EncodeToPNG();
         string filename = "C:/Users/humanscanner/Desktop/Pictures/" + snapshotIndex + ".png";
         System.IO.File.WriteAllBytes(filename, bytes);

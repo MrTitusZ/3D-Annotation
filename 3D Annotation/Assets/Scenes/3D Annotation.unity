@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &14785908 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6477766745531144315, guid: d216664daac7745429fc69c2a85fd6ca, type: 3}
-  m_PrefabInstance: {fileID: 5573595874753164631}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &207663226
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,7 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 239a0a6a825091f49925a6c255233e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grape: {fileID: 14785908}
+  grape: {fileID: 6477766745531144315, guid: d216664daac7745429fc69c2a85fd6ca, type: 3}
   snapshotCamera: {fileID: 207663228}
 --- !u!4 &1207519494
 Transform:
@@ -569,6 +564,10 @@ PrefabInstance:
     - target: {fileID: 6477766745531144315, guid: d216664daac7745429fc69c2a85fd6ca, type: 3}
       propertyPath: m_Name
       value: Toke_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477766745531144315, guid: d216664daac7745429fc69c2a85fd6ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d216664daac7745429fc69c2a85fd6ca, type: 3}
