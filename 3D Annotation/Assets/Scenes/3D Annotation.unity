@@ -421,7 +421,7 @@ MonoBehaviour:
   snapshotCamera: {fileID: 963194227}
   resWidth: 1920
   resHeight: 1080
-  rotationDegree: 60
+  rotationDegree: 15
 --- !u!4 &1207519494
 Transform:
   m_ObjectHideFlags: 0
