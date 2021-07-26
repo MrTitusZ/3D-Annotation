@@ -9,10 +9,4 @@ public class RotateObject : MonoBehaviour
     {
         transform.Rotate(0, -rotationDegree, 0);
     }
-
-    // This method returns the rotation degree
-    public float GetRotationDegree(float rotationDegree)
-    {
-        return rotationDegree;
-    }
 }

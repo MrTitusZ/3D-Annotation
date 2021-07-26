@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CreateFile : MonoBehaviour
 {
+    // This method creates a text file
     public void CreateTextFile(Rect boundingBox, int index, int imageWidth, int imageHeight)
     {
         string filePath = "C:/Users/humanscanner/Desktop/Pictures/" + index + ".txt";
         System.IO.File.WriteAllText(filePath, DarknetLabelFormat(boundingBox, imageWidth, imageHeight));
     }
 
-    // This method creates a darknet label format using the bounding box data
+    // This method creates a darknet label format using the bounding box data and the resolution
     string DarknetLabelFormat(Rect boundingBox, int imageWidth, int imageHeight)
     {
         float xMin = boundingBox.xMin;
@@ -25,7 +26,7 @@ public class CreateFile : MonoBehaviour
         w = w / w_img;
         h = h / h_img;
 
-        string spaceing = ", ";
+        string spaceing = " ";
 
         return 0 + spaceing + xCenter + spaceing + yCenter + spaceing + w + spaceing + h;
     }

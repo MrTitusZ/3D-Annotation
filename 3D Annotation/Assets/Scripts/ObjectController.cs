@@ -24,7 +24,7 @@ public class ObjectController : MonoBehaviour
         createFile = FindObjectOfType<CreateFile>();
         rotateObject = grapeInstance.GetComponent<RotateObject>();
 
-        int rotationNumber = (int)Mathf.Ceil(360 / rotateObject.GetRotationDegree(rotationDegree));
+        int rotationNumber = (int)Mathf.Ceil(360 / rotationDegree);
         RotateObjectAndTakeSnapshot(rotationNumber);
     }
 
