@@ -8,7 +8,6 @@ public class TakeSnapshot : MonoBehaviour
     [SerializeField] public int resHeight = 1080;
 
     Camera snapshotCamera;
-    int snapshotIndex = 0;
 
     void Start()
     {
@@ -19,11 +18,12 @@ public class TakeSnapshot : MonoBehaviour
     {
         if (Input.GetKeyDown("k"))
         {
-            CaptureSnapshot();
+            CaptureSnapshot(1);
         }
     }
 
-    private void CaptureSnapshot()
+    // This method captures a single snapshot in a .png format
+    public void CaptureSnapshot(int snapshotIndex)
     {
         RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
         snapshotCamera.targetTexture = rt;
@@ -31,10 +31,11 @@ public class TakeSnapshot : MonoBehaviour
         snapshotCamera.Render();
         RenderTexture.active = rt;
         screenShot.ReadPixels(new Rect(0, 0, resWidth, resHeight), 0, 0);
-        snapshotCamera.targetTexture = null;
+        //snapshotCamera.targetTexture = null;
+        //RenderTexture.active = null;
+        //Destroy(rt);
         byte[] bytes = screenShot.EncodeToPNG();
         string filename = "C:/Users/humanscanner/Desktop/Pictures/" + snapshotIndex + ".png";
         System.IO.File.WriteAllBytes(filename, bytes);
-        snapshotIndex++;
     }
 }

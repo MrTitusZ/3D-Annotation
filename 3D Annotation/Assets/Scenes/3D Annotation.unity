@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &14785908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6477766745531144315, guid: d216664daac7745429fc69c2a85fd6ca, type: 3}
+  m_PrefabInstance: {fileID: 5573595874753164631}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &207663226
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90874fa0a5f295344adb241e0d649471, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resWidth: 1920
+  resHeight: 1080
 --- !u!20 &207663228
 Camera:
   m_ObjectHideFlags: 0
@@ -462,6 +469,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1207519492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1207519494}
+  - component: {fileID: 1207519493}
+  m_Layer: 0
+  m_Name: ObjectController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1207519493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207519492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239a0a6a825091f49925a6c255233e75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grape: {fileID: 14785908}
+  snapshotCamera: {fileID: 207663228}
+--- !u!4 &1207519494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207519492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5573595874753164631
 PrefabInstance:
