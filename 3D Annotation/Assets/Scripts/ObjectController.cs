@@ -27,7 +27,7 @@ public class ObjectController : MonoBehaviour
     {
         for(int i = 0; i < rotationNumber; i++)
         {
-            Debug.Log(i);
+            takeSnapshot.CaptureSnapshot(snapshotCamera, i);
             rotateObject.RotateGameObject();
         }
     }

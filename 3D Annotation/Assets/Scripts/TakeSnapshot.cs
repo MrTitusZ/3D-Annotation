@@ -7,15 +7,8 @@ public class TakeSnapshot : MonoBehaviour
     [SerializeField] public int resWidth = 1920;
     [SerializeField] public int resHeight = 1080;
 
-    Camera snapshotCamera;
-
-    void Start()
-    {
-        snapshotCamera = gameObject.GetComponent<Camera>();
-    }
-
     // This method captures a single snapshot in a .png format
-    public void CaptureSnapshot(int snapshotIndex)
+    public void CaptureSnapshot(Camera snapshotCamera, int snapshotIndex)
     {
         RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
         snapshotCamera.targetTexture = rt;
