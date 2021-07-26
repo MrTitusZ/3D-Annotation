@@ -11,7 +11,7 @@ public class BoundingBox : MonoBehaviour
     }
 
     // This method returns a 3D rectangle around the given game object
-    public static Rect GUI3dRectWithObject(GameObject go)
+    Rect GUI3dRectWithObject(GameObject go)
     {
 
         Vector3 cen = go.GetComponent<Renderer>().bounds.center;
@@ -38,7 +38,7 @@ public class BoundingBox : MonoBehaviour
     }
 
     // This method returns a 2D rectangle around the game object
-    public static Rect GUI2dRectWithObject(GameObject go)
+    Rect GUI2dRectWithObject(GameObject go)
     {
         Vector3[] vertices = go.GetComponent<MeshFilter>().mesh.vertices;
 
@@ -59,7 +59,7 @@ public class BoundingBox : MonoBehaviour
     }
 
     // This method converts the world points to the screen pixel point
-    public static Vector2 WorldToGUIPoint(Vector3 world)
+    Vector2 WorldToGUIPoint(Vector3 world)
     {
         Vector2 screenPoint = Camera.main.WorldToScreenPoint(world);
         screenPoint.y = (float)Screen.height - screenPoint.y;

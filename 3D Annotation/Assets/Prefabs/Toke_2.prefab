@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1571226663885627367}
   - component: {fileID: 7572614188312344353}
   - component: {fileID: 8092361772850013135}
+  - component: {fileID: -267377915194031075}
   m_Layer: 0
   m_Name: Toke_2
   m_TagString: Untagged
@@ -54,6 +55,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458407901aa0ec84381aec88fc50e933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-267377915194031075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2199391591413974365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e2a61173aea2394e8276a8d76018e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationDegree: 15
 --- !u!1 &7135959243120016772
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class RotateObject : MonoBehaviour
 {
     [SerializeField] float rotationDegree = 15f;
 
+    // This method rotates the object
     public void RotateGameObject()
     {
         transform.Rotate(0, -rotationDegree, 0);
