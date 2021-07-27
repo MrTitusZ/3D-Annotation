@@ -512,11 +512,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 239a0a6a825091f49925a6c255233e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grapeModel: {fileID: 6477766745531144315, guid: d216664daac7745429fc69c2a85fd6ca, type: 3}
+  grapeModel: {fileID: 2199391591413974365, guid: cec0617152a9aca41a01265c4b373ada, type: 3}
   snapshotCamera: {fileID: 963194227}
   resWidth: 1920
   resHeight: 1080
-  rotationDegree: 10
+  rotationDegree: 15
   wayPoints:
   - {fileID: 1242890361}
   - {fileID: 700721713}
