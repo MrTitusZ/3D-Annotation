@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class TakeSnapshot : MonoBehaviour
 {
-    
-
     // This method captures a single snapshot in a .png format with the given resolution
-    public void CaptureSnapshot(Camera snapshotCamera, int snapshotIndex, int resWidth, int resHeight)
+    public void CaptureSnapshot(Camera snapshotCamera, int fileIndex, int snapshotIndex, int resWidth, int resHeight)
     {
         RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
         snapshotCamera.targetTexture = rt;
@@ -19,7 +17,7 @@ public class TakeSnapshot : MonoBehaviour
         RenderTexture.active = null;
         Destroy(rt);
         byte[] bytes = screenShot.EncodeToPNG();
-        string filename = "C:/Users/humanscanner/Desktop/Pictures/" + snapshotIndex + ".png";
+        string filename = "C:/Users/humanscanner/Desktop/Pictures/" + fileIndex + "_" + snapshotIndex + ".png";
         System.IO.File.WriteAllBytes(filename, bytes);
     }
 }

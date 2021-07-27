@@ -5,9 +5,9 @@ using UnityEngine;
 public class CreateFile : MonoBehaviour
 {
     // This method creates a text file
-    public void CreateTextFile(Rect boundingBox, int index, int imageWidth, int imageHeight)
+    public void CreateTextFile(Rect boundingBox, int objectIndex, int fileIndex, int imageWidth, int imageHeight)
     {
-        string filePath = "C:/Users/humanscanner/Desktop/Pictures/" + index + ".txt";
+        string filePath = "C:/Users/humanscanner/Desktop/Pictures/" + objectIndex + "_" + fileIndex + ".txt";
         System.IO.File.WriteAllText(filePath, DarknetLabelFormat(boundingBox, imageWidth, imageHeight));
     }
 

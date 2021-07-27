@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class ObjectController : MonoBehaviour
 {
-    [SerializeField] GameObject grape;
+    [SerializeField] GameObject grapeModel;
     [SerializeField] Camera snapshotCamera;
     [SerializeField] public int resWidth = 1920;
     [SerializeField] public int resHeight = 1080;
     [SerializeField] float rotationDegree = 15f;
+    [SerializeField] Transform[] wayPoints;
 
     GameObject grapeInstance;
     TakeSnapshot takeSnapshot;
@@ -18,10 +19,10 @@ public class ObjectController : MonoBehaviour
 
     void Start()
     {
-        grapeInstance = Instantiate(grape, grape.transform.position, grape.transform.rotation);
+        grapeInstance = Instantiate(grapeModel, grapeModel.transform.position, grapeModel.transform.rotation);
         takeSnapshot = snapshotCamera.GetComponent<TakeSnapshot>();
         boundingBox = grapeInstance.GetComponent<BoundingBox>();
-        createFile = FindObjectOfType<CreateFile>();
+        createFile = GetComponent<CreateFile>();
         rotateObject = grapeInstance.GetComponent<RotateObject>();
 
         int rotationNumber = (int)Mathf.Ceil(360 / rotationDegree);
@@ -30,11 +31,16 @@ public class ObjectController : MonoBehaviour
 
     void RotateObjectAndTakeSnapshot(int rotationNumber)
     {
-        for(int i = 0; i < rotationNumber; i++)
+        for(int viewPointCounter = 0; viewPointCounter < wayPoints.Length; viewPointCounter++)
         {
-            takeSnapshot.CaptureSnapshot(snapshotCamera, i, resWidth, resHeight);
-            createFile.CreateTextFile(boundingBox.GUI2dRectWithObject(grapeInstance), i, resWidth, resHeight);
-            rotateObject.RotateGameObject(rotationDegree);
+            Camera.main.transform.position = wayPoints[viewPointCounter].transform.position;
+            Camera.main.transform.rotation = wayPoints[viewPointCounter].transform.rotation;
+            for (int rotationCounter = 0; rotationCounter < rotationNumber; rotationCounter++)
+            {
+                takeSnapshot.CaptureSnapshot(snapshotCamera, viewPointCounter, rotationCounter, resWidth, resHeight);
+                createFile.CreateTextFile(boundingBox.GUI2dRectWithObject(grapeInstance), viewPointCounter, rotationCounter, resWidth, resHeight);
+                rotateObject.RotateGameObject(rotationDegree);
+            }
         }
     }
 }
